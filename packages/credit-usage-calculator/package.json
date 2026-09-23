@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/credit-usage-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "What a credit balance buys: credits spent, credits left, and what the remainder is worth in each feature.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",

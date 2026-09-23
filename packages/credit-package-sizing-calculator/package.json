@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/credit-package-sizing-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "How many credits a credit package price may include while holding a target margin, with the package size, subscription bonus and free allowance those limits argue for.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",

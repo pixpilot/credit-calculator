@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/credit-package-margin-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "What margin each credit package on sale earns, at the blended and at the worst-case cost per credit.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",

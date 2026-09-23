@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/cost-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "What an operation costs to run: token estimates priced at a model, plus fixed infrastructure cost, in exact decimal money.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",
