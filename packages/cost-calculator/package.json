@@ -1,17 +1,29 @@
 {
-  "name": "example-package",
+  "name": "@pixpilot/cost-calculator",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.34.5",
-  "author": "",
+  "packageManager": "pnpm@10.17.0",
+  "description": "A cost calculator library",
+  "author": "Mo Doaie <m.doaie@hotmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/pixpilot/credit-calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixpilot/credit-calculator.git",
+    "directory": "packages/cost-calculator"
+  },
+  "bugs": {
+    "url": "https://github.com/pixpilot/credit-calculator/issues"
+  },
   "keywords": [],
+  "sideEffects": false,
   "exports": "./src/index.ts",
   "files": [
     "dist"
   ],
   "publishConfig": {
     "access": "public",
+    "registry": "https://registry.npmjs.org",
     "exports": {
       ".": {
         "types": "./dist/index.d.ts",
@@ -29,13 +41,17 @@
     "clean:all": "pnpm clean && git clean -xdf node_modules",
     "build": "tsdown",
     "build:watch": "tsdown --watch",
-    "test": "vitest run",
+    "test": "vitest --run --passWithNoTests",
     "test:watch": "vitest --watch",
-    "test:ui": "vitest --ui",
+    "test:ui": "vitest --ui --watch",
+    "test:ui:coverage": "vitest --ui --coverage --watch --hookTimeout=30000 --coverage.thresholds.lines=0 --coverage.thresholds.functions=0 --coverage.thresholds.branches=0 --coverage.thresholds.statements=0",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
     "lint": "eslint",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore"
+  },
+  "dependencies": {
+    "zod": "catalog:prod"
   },
   "devDependencies": {
     "@internal/eslint-config": "workspace:*",
@@ -43,8 +59,13 @@
     "@internal/tsconfig": "workspace:*",
     "@internal/tsdown-config": "workspace:*",
     "@internal/vitest-config": "workspace:*",
-    "@pixpilot/dev-config": "catalog:dev",
     "@types/node": "catalog:dev",
-    "tsdown": "catalog:dev"
-  }
+    "@vitest/coverage-v8": "catalog:dev",
+    "@vitest/ui": "catalog:dev",
+    "eslint": "catalog:dev",
+    "tsdown": "catalog:dev",
+    "typescript": "catalog:dev",
+    "vitest": "catalog:dev"
+  },
+  "prettier": "@internal/prettier-config"
 }
