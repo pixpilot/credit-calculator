@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/credit-pricing-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "The least one credit can sell for and still hold a target gross margin.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",

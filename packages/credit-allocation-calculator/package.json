@@ -1,7 +1,7 @@
 {
   "name": "@pixpilot/credit-allocation-calculator",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "How many credits each operation charges, what one credit costs the business to honour, and what it earns under a given pricing scenario.",
   "author": "Mo Doaie <m.doaie@hotmail.com>",
