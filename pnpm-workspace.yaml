@@ -18,7 +18,7 @@ catalogs:
     '@pixpilot/dev-config': ^3.22.1
     '@storybook/react': ^10.6.0
     '@pixpilot/eslint-config': ^3.0.0
-    '@pixpilot/tsdown-config': ^0.6.0
+    '@pixpilot/tsdown-config': ^0.8.3
     '@pixpilot/workspace-package-generator': ^2.1.2
     '@turbo/gen': ^2.11.2
     '@types/node': ^26.6.2
