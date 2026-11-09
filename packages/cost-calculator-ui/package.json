@@ -51,13 +51,13 @@
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore"
   },
   "peerDependencies": {
+    "@pixpilot/shadcn": "^2.4.1",
+    "@pixpilot/shadcn-ui": "^3.20.1",
     "react": "^18 || ^19",
     "react-dom": "^18 || ^19"
   },
   "dependencies": {
-    "@pixpilot/cost-calculator": "workspace:*",
-    "@pixpilot/shadcn": "catalog:prod",
-    "@pixpilot/shadcn-ui": "catalog:prod",
+    "@pixpilot/cost-calculator": "workspace:^",
     "lucide-react": "catalog:prod"
   },
   "devDependencies": {
@@ -66,6 +66,8 @@
     "@internal/tsconfig": "workspace:*",
     "@internal/tsdown-config": "workspace:*",
     "@internal/vitest-config": "workspace:*",
+    "@pixpilot/shadcn": "catalog:prod",
+    "@pixpilot/shadcn-ui": "catalog:prod",
     "@testing-library/dom": "catalog:dev",
     "@testing-library/jest-dom": "catalog:dev",
     "@testing-library/react": "catalog:dev",

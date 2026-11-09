@@ -98,11 +98,11 @@ catalogs:
       version: 5.0.1
   prod:
     '@pixpilot/shadcn':
-      specifier: ^2.3.3
-      version: 2.3.3
+      specifier: ^2.4.1
+      version: 2.4.1
     '@pixpilot/shadcn-ui':
-      specifier: ^3.17.3
-      version: 3.17.3
+      specifier: ^3.20.1
+      version: 3.20.1
     lucide-react:
       specifier: 1.26.0
       version: 1.26.0
@@ -224,14 +224,8 @@ importers:
   packages/cost-calculator-ui:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
-      '@pixpilot/shadcn':
-        specifier: catalog:prod
-        version: 2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       lucide-react:
         specifier: catalog:prod
         version: 1.26.0(react@19.3.0)
@@ -251,6 +245,12 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn':
+        specifier: catalog:prod
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@testing-library/dom':
         specifier: catalog:dev
         version: 10.4.2
@@ -300,7 +300,7 @@ importers:
   packages/credit-allocation-calculator:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       zod:
         specifier: catalog:prod
@@ -346,17 +346,11 @@ importers:
   packages/credit-allocation-calculator-ui:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       '@pixpilot/credit-allocation-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-allocation-calculator
-      '@pixpilot/shadcn':
-        specifier: catalog:prod
-        version: 2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       lucide-react:
         specifier: catalog:prod
         version: 1.26.0(react@19.3.0)
@@ -376,6 +370,12 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn':
+        specifier: catalog:prod
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@testing-library/dom':
         specifier: catalog:dev
         version: 10.4.2
@@ -468,14 +468,8 @@ importers:
   packages/credit-package-margin-calculator-ui:
     dependencies:
       '@pixpilot/credit-package-margin-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-package-margin-calculator
-      '@pixpilot/shadcn':
-        specifier: catalog:prod
-        version: 2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       lucide-react:
         specifier: catalog:prod
         version: 1.26.0(react@19.3.0)
@@ -495,6 +489,12 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn':
+        specifier: catalog:prod
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@testing-library/dom':
         specifier: catalog:dev
         version: 10.4.2
@@ -544,7 +544,7 @@ importers:
   packages/credit-package-sizing-calculator:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       zod:
         specifier: catalog:prod
@@ -590,14 +590,11 @@ importers:
   packages/credit-package-sizing-calculator-ui:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       '@pixpilot/credit-package-sizing-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-package-sizing-calculator
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       lucide-react:
         specifier: catalog:prod
         version: 1.26.0(react@19.3.0)
@@ -617,6 +614,9 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@testing-library/dom':
         specifier: catalog:dev
         version: 10.4.2
@@ -666,7 +666,7 @@ importers:
   packages/credit-pricing-calculator:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       zod:
         specifier: catalog:prod
@@ -688,7 +688,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/vitest
       '@pixpilot/credit-allocation-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-allocation-calculator
       '@types/node':
         specifier: ^26.6.2
@@ -715,14 +715,11 @@ importers:
   packages/credit-pricing-calculator-ui:
     dependencies:
       '@pixpilot/cost-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../cost-calculator
       '@pixpilot/credit-pricing-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-pricing-calculator
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@internal/eslint-config':
         specifier: workspace:*
@@ -739,6 +736,9 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@testing-library/dom':
         specifier: catalog:dev
         version: 10.4.2
@@ -831,14 +831,8 @@ importers:
   packages/credit-usage-calculator-ui:
     dependencies:
       '@pixpilot/credit-usage-calculator':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../credit-usage-calculator
-      '@pixpilot/shadcn':
-        specifier: catalog:prod
-        version: 2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
-      '@pixpilot/shadcn-ui':
-        specifier: catalog:prod
-        version: 3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@internal/eslint-config':
         specifier: workspace:*
@@ -855,6 +849,12 @@ importers:
       '@internal/vitest-config':
         specifier: workspace:*
         version: link:../../tooling/vitest
+      '@pixpilot/shadcn':
+        specifier: catalog:prod
+        version: 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@pixpilot/shadcn-ui':
+        specifier: catalog:prod
+        version: 3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@storybook/react':
         specifier: catalog:dev
         version: 10.6.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(storybook@10.6.0(@types/react@19.3.0)(prettier@3.9.9)(react@19.3.0))(typescript@6.0.3)
@@ -2449,15 +2449,15 @@ packages:
   '@pixpilot/rollup-plugin-size-limit@0.1.3':
     resolution: {integrity: sha512-q68eAydzBfHKBkD6UD3s4316AXSiEgx7oGArye9jshbqLed8mKq++rvi9Xx3j62GYHEA5KzBdWHl8GtmANMGcw==}
 
-  '@pixpilot/shadcn-ui@3.17.3':
-    resolution: {integrity: sha512-Zxgh6JN2JNOFLDGUFQb5GH5DJmQK4K+lIUiOvFL2b/0sAZFpQsL2i9RSCeBTxw5VrKxslH0cu/In8w3BNxImZA==}
+  '@pixpilot/shadcn-ui@3.20.1':
+    resolution: {integrity: sha512-+Je9KKAVSdHuUU8bIoXIf7DNVLYQ2dBLWjWoTLCO5Ma6bxzoAOnqP85a/0QntXQooeuGfTcd6W/H4ous77T67A==}
     hasBin: true
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  '@pixpilot/shadcn@2.3.3':
-    resolution: {integrity: sha512-t9hsFAFlcp7ud0HdrmxSQtmEL5vuBTG28psyR0xgWpRfuowx08w8tBQXZPj/UbwnmiTszM0jEbK5ge1AeHq4Pw==}
+  '@pixpilot/shadcn@2.4.1':
+    resolution: {integrity: sha512-ohPLdq1Trpc4EKu7lv3FTQvYmU9VYGog4HOTSKP0elBZ+UJyz97G0X24nSwdD8+iIT8ZcncgA2R2m5+7x+p80g==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -3463,11 +3463,6 @@ packages:
     resolution: {integrity: sha512-r5bClKrcIusDoo049dSL8CawnHR6mRdDwhlQuIgZRNty68q0x8k3Lf1BtPAMxRf/GgnHBnIO4ujd3+GQdLWzxQ==}
     engines: {node: '>=16.0.0'}
 
-  '@tailwindcss/typography@0.5.20':
-    resolution: {integrity: sha512-hwbzQuNUfcPvbegQFatVPl/MY/tcM9KLl963hQ5laJKPh81TEZ1+dNG9PirGvcaDBkp+BCshExAyKVPW91dozw==}
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || >=4.0.0 || insiders'
-
   '@tanstack/react-virtual@3.14.13':
     resolution: {integrity: sha512-JbDTAwtzZ99aOeCrAfW5EsE5KSq5RWh6Af2dtFwyLIIk48Ja7vm6n4axu/43T3vfjFnEGJalxJ1wyYjSQD6bSg==}
     peerDependencies:
@@ -3910,133 +3905,157 @@ packages:
     resolution: {integrity: sha512-jrOY5WM+AaAqkv51fHP1x28ifto4WgcZVzodLUyMU1jMWn5Sq+VciRdk/n8E0Ey5w4p4cWWE+m5GfXWOYh7Kzw==}
     cpu: [arm64]
     os: [android]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-darwin-arm64@0.9.5':
     resolution: {integrity: sha512-4O4lkCQIzPZGjiNB1GORSI6hBECbiiSBS/APZXPvNKYH+nhY4uuqv03LNXA+SET3hoBjvr95P5rIhY8KQaQUBA==}
     cpu: [arm64]
     os: [darwin]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-darwin-x64@0.9.5':
     resolution: {integrity: sha512-9EvoUO0SEhD6/d8VHdWuPerepPMSR1y84+UEgz8Un1Ope14Oe7xMvePpEQLTLovoIFZ8Zg3iZ8z8E11pZMqC3g==}
     cpu: [x64]
     os: [darwin]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-freebsd-x64@0.9.5':
     resolution: {integrity: sha512-HqT78WwgHTmp8lwujoUa9CrIortX4DdpuiVC18ZPSGvuuJf4ylpIEI6QrQEM78Zwz3muhAWAOXZ5irdiYY+AyA==}
     cpu: [x64]
     os: [freebsd]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm-gnu@0.9.5':
     resolution: {integrity: sha512-QJXwIW6Ms3QIawbcBIedmrmXnfdpuAOjZJ/eAABq5XTzWvSxZ7lutu9W5yIHahlaTaFnBo7ikrVMD1szLTpPUw==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm-musl@0.9.5':
     resolution: {integrity: sha512-eHbFy3IHGb+IYarrYwAo0yWSEQV3eAmEn6VrsKA6I1Wy1YPJxWqSJlV69JhqsHtJuJlljUIF3ex0y46yaKIu9w==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm64-gnu@0.9.5':
     resolution: {integrity: sha512-ByoJMbySTaDhjAXSu8q6Lh7HKg3YoesXpcT72aYk0Aiw4PCznmY4ybpLTq0RCvp0RIPhFm/6yECFiGBwyCC1nw==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm64-musl@0.9.5':
     resolution: {integrity: sha512-gD9vfXIoBw1toSxhO9rgmSu/FEfy3PMznJAxVjIuH8DrWEiDKXmJO0pJKfj1Ltbe/TmtWVZR+TjISqeSIGQzMg==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-x64-gnu@0.9.5':
     resolution: {integrity: sha512-BARvdnvqMGjOr5Iel2JH+9H5vAIE0R6H0Z2fsT02xrvmI/1ZXNB8lkuX+ZGevPhZb3zJ9WeC/R8JZstrsUOK5g==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-x64-musl@0.9.5':
     resolution: {integrity: sha512-x8flcevS1fbb7ESrmpOY/pON4eInSaE/7Ktjqx2udOE2W33BNSZmJuwpyUgo54AoHNqrcaM7szqydyJn5fNvew==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-win32-arm64@0.9.5':
     resolution: {integrity: sha512-KOL/rBatWqH4ZpCNoF8ZtSNdOJbAxBJLmk/VeRciepGROPTbPum1A9t67GpFgOU7qrkUWlPJdJ+KHKbvbmOt+w==}
     cpu: [arm64]
     os: [win32]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-win32-x64@0.9.5':
     resolution: {integrity: sha512-FxENahEjWSan59Syh/us/Kf4wNq8qrJLFJ3R2N4Oiwtb6yNdz/rWLNTIoNSssnsp7IoWJdUP6o/Z8ppg7lXMcg==}
     cpu: [x64]
     os: [win32]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-parser/binding-android-arm64@0.9.5':
     resolution: {integrity: sha512-A2JCFCSHfnficqYEw4Iujpx7XrkMM3UfFcgJFmYpZSo9zM4nyhmdIIE0FogSduuU60lhM0/UcfuUBXIVNBMlGQ==}
     cpu: [arm64]
     os: [android]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-darwin-arm64@0.9.5':
     resolution: {integrity: sha512-3PiyU+Eare4YuKaQ22N98/yAiROPY5o/NQJHraICzDvk4pgS+m+bgLKOvkGBRn33OnV95Vdv1Mn38b+MQHpULQ==}
     cpu: [arm64]
     os: [darwin]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-darwin-x64@0.9.5':
     resolution: {integrity: sha512-blFMAFI7AInI83XaiOF8cIeiRM46Nz9EfpZtZPRLbKxSA9aAr5v8aHYpmfN6NoyXxAv/10pwS4gsAuc1W6fy5Q==}
     cpu: [x64]
     os: [darwin]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-freebsd-x64@0.9.5':
     resolution: {integrity: sha512-TsNuL4qsZdO0tHp5GW43Y5fHeLPpPHA675wdcPNTcdq2ZO5AvsQWFFoiDg8CH4oBktfsQ9tdvKhjLnLYwKvp4g==}
     cpu: [x64]
     os: [freebsd]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm-gnu@0.9.5':
     resolution: {integrity: sha512-b0afYK5gHeV8RdmOcqAlgM8ONsye4cax4DMnIBaoJyPMd1UTGvTbpkqQcPVdhmHlcfcGVGMV1laeVovlr/dscw==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm-musl@0.9.5':
     resolution: {integrity: sha512-fD3lKzl+r6j6n8DwiMY53qnh5DLqD8KJjCp+NbVud54Nnh3Q9Wprqss3YzyMHP3NSJk663Wlg1E1X5qOuFVFig==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm64-gnu@0.9.5':
     resolution: {integrity: sha512-aRU/aCphV1MWCl/lvI6NX8LgucHQ68Fx+vz7NBb/5MEr2EuzCxiPOQqeFcMdWh+2AED/p0AvAREch0c+cSnlhA==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm64-musl@0.9.5':
     resolution: {integrity: sha512-5+Guro0l8H473YXlEjVNBRLN/IbPbJdnQh1zo0OLt49xxnON+XMJRRaEyTOTfkn9QSRg0+BhEKGR4W9Gu2uZJQ==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-x64-gnu@0.9.5':
     resolution: {integrity: sha512-pwwSyV9q+GlvzSXlsMZBMlgk22L5bud714/vqZCdeUTivzeUVltQzUaf3IQXOGXdpc59JYTeuMCtbGquaAUoCA==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-x64-musl@0.9.5':
     resolution: {integrity: sha512-z18j6JN3lBHH8vzN7gG1M8fI0nlgItSfnC9PfbmUbt97iHViKfw2iA2G9fGwRMe5LyPRZBrejIlapbygPbpdaw==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-win32-arm64@0.9.5':
     resolution: {integrity: sha512-s6Gwttb1dQvtPX6Bgkw+UPC9IO3UBDXc6Zezog8MMgvu3UfJBBB9TQqKBX/2quu0Eyh+lLSAyNlIyyecaagUPg==}
     cpu: [arm64]
     os: [win32]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-win32-x64@0.9.5':
     resolution: {integrity: sha512-FrERt9YWatY3bJfSUdi4YWY+6iQcyo3MzCC821BxlWM5TFZEHijnpz/bknR79VHlXY/9CvXz8ZlaAGPsTtN3nw==}
     cpu: [x64]
     os: [win32]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-toolchain/types@0.9.5':
     resolution: {integrity: sha512-KiuLNNgX9uNealaWAR+G3/cMXnRk9x4TY2EkYe/KIag+UPdwiA0RRf1hr1WAxzTP8KGzCTkqUdLPvqh32sEO3w==}
@@ -4418,11 +4437,6 @@ packages:
 
   css.escape@1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
-
-  cssesc@3.0.0:
-    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
-    engines: {node: '>=4'}
-    hasBin: true
 
   cssstyle@5.3.7:
     resolution: {integrity: sha512-7D2EPVltRrsTkhpQmksIu+LxeWAIEk6wRDMJ1qljlv+CKHJM+cJLlfhWIzNA44eAsHXSNe3+vO6DW1yCYx8SuQ==}
@@ -5139,10 +5153,6 @@ packages:
     resolution: {integrity: sha512-iZyKG96/JwPz1N55vj2Ie2vXbhu440zfUfJvSwEqEbeLluk7NnapfGqa7LH0mOsnDxTF85Mx8/dyR6HfqcbmbQ==}
     engines: {node: '>=20'}
 
-  hasown@2.0.2:
-    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
-    engines: {node: '>= 0.4'}
-
   hasown@2.0.4:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
@@ -5190,10 +5200,6 @@ packages:
 
   hyphenate-style-name@1.1.0:
     resolution: {integrity: sha512-WDC/ui2VVRrz3jOVi+XtjqkDjiVjTtFaAGiW37k6b+ohyQ5wYDOGkvCZa8+H0nx3gyvv0+BST9xuOgIyGQ00gw==}
-
-  iconv-lite@0.7.0:
-    resolution: {integrity: sha512-cf6L2Ds3h57VVmkZe+Pn+5APsT7FpqJtEhhieDCvrE2MK5Qk9MyffgQyuxQTm6BChfeZNtcOLHp9IcWRVcIcBQ==}
-    engines: {node: '>=0.10.0'}
 
   iconv-lite@0.7.3:
     resolution: {integrity: sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==}
@@ -6004,10 +6010,6 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
-  postcss-selector-parser@6.0.10:
-    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
-    engines: {node: '>=4'}
-
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -6539,11 +6541,6 @@ packages:
   tailwind-merge@3.7.0:
     resolution: {integrity: sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==}
 
-  tailwindcss-animate@1.0.7:
-    resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
-
   tapable@2.2.2:
     resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
     engines: {node: '>=6'}
@@ -6804,9 +6801,6 @@ packages:
     resolution: {integrity: sha512-6L+EeigHMQhdaIPNIFUKwfWJSwWFQ8gJbJ2DLOs5sDIegTwR9fRxvnM3uciHKjIZhFz+KAv2emhWMRvDmMcY8A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  util-deprecate@1.0.2:
-    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -8355,24 +8349,25 @@ snapshots:
     dependencies:
       bytes: 3.1.2
 
-  '@pixpilot/shadcn-ui@3.17.3(@floating-ui/dom@1.8.0)(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@pixpilot/shadcn-ui@3.20.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@ebay/nice-modal-react': 1.2.13(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@floating-ui/dom': 1.8.0
       '@iconify-json/fa': 1.2.2
       '@iconify-json/mdi': 1.2.3
       '@iconify/react': 6.0.2(react@19.3.0)
       '@modelcontextprotocol/sdk': 1.30.0(zod@4.6.5)
       '@pixpilot/hash': 0.2.1
-      '@pixpilot/shadcn': 2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@pixpilot/shadcn': 2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@pixpilot/string': 3.0.1
       '@radix-ui/react-slot': 1.3.3(@types/react@19.3.0)(react@19.3.0)
-      '@tailwindcss/typography': 0.5.20
       '@tanstack/react-virtual': 3.14.13(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@tiptap/core': 3.31.3(@tiptap/pm@3.31.3)
       '@tiptap/extension-link': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-placeholder': 3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))
       '@tiptap/extension-text-align': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/extensions': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
+      '@tiptap/pm': 3.31.3
       '@tiptap/react': 3.31.3(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@tiptap/starter-kit': 3.31.3
       class-variance-authority: 0.7.1
@@ -8386,11 +8381,8 @@ snapshots:
       zod: 4.6.5
     transitivePeerDependencies:
       - '@cfworker/json-schema'
-      - '@floating-ui/dom'
-      - '@floating-ui/react'
       - '@sinclair/typebox'
       - '@standard-schema/spec'
-      - '@tiptap/pm'
       - '@types/react'
       - '@types/react-dom'
       - '@typeschema/main'
@@ -8411,15 +8403,15 @@ snapshots:
       - nope-validator
       - superstruct
       - supports-color
-      - tailwindcss
       - typanion
       - valibot
       - vest
       - yup
 
-  '@pixpilot/shadcn@2.3.3(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@pixpilot/shadcn@2.4.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(ajv@8.17.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@diceui/tags-input': 0.7.2(@floating-ui/react@0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@floating-ui/react': 0.27.20(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@hookform/resolvers': 5.9.1(ajv@8.17.1)(react-hook-form@7.88.0(react@19.3.0))(zod@4.6.5)
       '@pixpilot/hash': 0.2.1
       '@radix-ui/react-alert-dialog': 1.1.23(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -8453,11 +8445,9 @@ snapshots:
       react-dom: 19.3.0(react@19.3.0)
       react-hook-form: 7.88.0(react@19.3.0)
       tailwind-merge: 3.7.0
-      tailwindcss-animate: 1.0.7
       vaul: 1.1.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       zod: 4.6.5
     transitivePeerDependencies:
-      - '@floating-ui/react'
       - '@sinclair/typebox'
       - '@standard-schema/spec'
       - '@types/react'
@@ -8479,7 +8469,6 @@ snapshots:
       - joi
       - nope-validator
       - superstruct
-      - tailwindcss
       - typanion
       - valibot
       - vest
@@ -9428,10 +9417,6 @@ snapshots:
       picomatch: 4.0.7
 
   '@tabby_ai/hijri-converter@1.0.5': {}
-
-  '@tailwindcss/typography@0.5.20':
-    dependencies:
-      postcss-selector-parser: 6.0.10
 
   '@tanstack/react-virtual@3.14.13(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
@@ -10383,8 +10368,6 @@ snapshots:
 
   css.escape@1.5.1: {}
 
-  cssesc@3.0.0: {}
-
   cssstyle@5.3.7:
     dependencies:
       '@asamuzakjp/css-color': 4.1.2
@@ -10564,7 +10547,7 @@ snapshots:
       has-property-descriptors: 1.0.2
       has-proto: 1.2.0
       has-symbols: 1.1.0
-      hasown: 2.0.2
+      hasown: 2.0.4
       internal-slot: 1.1.0
       is-array-buffer: 3.0.5
       is-callable: 1.2.7
@@ -10613,12 +10596,12 @@ snapshots:
       es-errors: 1.3.0
       get-intrinsic: 1.3.0
       has-tostringtag: 1.0.2
-      hasown: 2.0.2
+      hasown: 2.0.4
     optional: true
 
   es-shim-unscopables@1.1.0:
     dependencies:
-      hasown: 2.0.2
+      hasown: 2.0.4
     optional: true
 
   es-to-primitive@1.3.0:
@@ -10795,7 +10778,7 @@ snapshots:
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
       eslint: 10.11.0(jiti@2.6.1)
-      hasown: 2.0.2
+      hasown: 2.0.4
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
       minimatch: 3.1.5
@@ -11184,7 +11167,7 @@ snapshots:
       call-bound: 1.0.4
       define-properties: 1.2.1
       functions-have-names: 1.2.3
-      hasown: 2.0.2
+      hasown: 2.0.4
       is-callable: 1.2.7
     optional: true
 
@@ -11207,7 +11190,7 @@ snapshots:
       get-proto: 1.0.1
       gopd: 1.2.0
       has-symbols: 1.1.0
-      hasown: 2.0.2
+      hasown: 2.0.4
       math-intrinsics: 1.1.0
 
   get-nonce@1.0.1: {}
@@ -11310,10 +11293,6 @@ snapshots:
     dependencies:
       hookified: 1.15.1
 
-  hasown@2.0.2:
-    dependencies:
-      function-bind: 1.1.2
-
   hasown@2.0.4:
     dependencies:
       function-bind: 1.1.2
@@ -11362,10 +11341,6 @@ snapshots:
 
   hyphenate-style-name@1.1.0: {}
 
-  iconv-lite@0.7.0:
-    dependencies:
-      safer-buffer: 2.1.2
-
   iconv-lite@0.7.3:
     dependencies:
       safer-buffer: 2.1.2
@@ -11398,7 +11373,7 @@ snapshots:
   internal-slot@1.1.0:
     dependencies:
       es-errors: 1.3.0
-      hasown: 2.0.2
+      hasown: 2.0.4
       side-channel: 1.1.1
     optional: true
 
@@ -11516,7 +11491,7 @@ snapshots:
       call-bound: 1.0.4
       gopd: 1.2.0
       has-tostringtag: 1.0.2
-      hasown: 2.0.2
+      hasown: 2.0.4
     optional: true
 
   is-set@2.0.3:
@@ -12400,11 +12375,6 @@ snapshots:
   possible-typed-array-names@1.1.0:
     optional: true
 
-  postcss-selector-parser@6.0.10:
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-
   postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
@@ -12598,7 +12568,7 @@ snapshots:
     dependencies:
       bytes: 3.1.2
       http-errors: 2.0.1
-      iconv-lite: 0.7.0
+      iconv-lite: 0.7.3
       unpipe: 1.0.0
 
   react-day-picker@9.14.0(react@19.3.0):
@@ -13131,8 +13101,6 @@ snapshots:
 
   tailwind-merge@3.7.0: {}
 
-  tailwindcss-animate@1.0.7: {}
-
   tapable@2.2.2: {}
 
   term-size@2.2.1: {}
@@ -13390,8 +13358,6 @@ snapshots:
   use-sync-external-store@1.7.0(react@19.3.0):
     dependencies:
       react: 19.3.0
-
-  util-deprecate@1.0.2: {}
 
   vary@1.1.2: {}
 

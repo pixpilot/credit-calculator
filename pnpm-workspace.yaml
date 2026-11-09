@@ -4,8 +4,8 @@ packages:
 
 catalogs:
   prod:
-    '@pixpilot/shadcn': ^2.3.3
-    '@pixpilot/shadcn-ui': ^3.17.3
+    '@pixpilot/shadcn': ^2.4.1
+    '@pixpilot/shadcn-ui': ^3.20.1
     lucide-react: 1.26.0
     zod: ^4.6.5
   dev:

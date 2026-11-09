@@ -51,7 +51,7 @@
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore"
   },
   "dependencies": {
-    "@pixpilot/cost-calculator": "workspace:*",
+    "@pixpilot/cost-calculator": "workspace:^",
     "zod": "catalog:prod"
   },
   "devDependencies": {
@@ -60,7 +60,7 @@
     "@internal/tsconfig": "workspace:*",
     "@internal/tsdown-config": "workspace:*",
     "@internal/vitest-config": "workspace:*",
-    "@pixpilot/credit-allocation-calculator": "workspace:*",
+    "@pixpilot/credit-allocation-calculator": "workspace:^",
     "@types/node": "catalog:dev",
     "@vitest/coverage-v8": "catalog:dev",
     "@vitest/ui": "catalog:dev",

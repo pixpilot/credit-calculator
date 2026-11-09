@@ -51,7 +51,7 @@
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ../../.prettierignore"
   },
   "dependencies": {
-    "@pixpilot/cost-calculator": "workspace:*",
+    "@pixpilot/cost-calculator": "workspace:^",
     "zod": "catalog:prod"
   },
   "devDependencies": {
