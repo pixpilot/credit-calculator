@@ -1,5 +1,18 @@
 # @pixpilot/credit-allocation-calculator-ui
 
+## 0.2.0
+
+### Minor Changes
+
+- 1d29824: Make `@pixpilot/shadcn` (`^2.4.1`) and `@pixpilot/shadcn-ui` (`^3.20.1`) peer dependencies of the UI packages, so they share the app's copy instead of installing their own (an old nested `shadcn-ui` 3.20.0 left tiptap's `@floating-ui/dom` peer unmet). Consumers must now install them themselves.
+
+  Sibling `@pixpilot/*` packages are now declared with `workspace:^`, so they publish as a caret range instead of an exact pin and dedupe with the app's copy.
+
+### Patch Changes
+
+- Updated dependencies [1d29824]
+  - @pixpilot/credit-allocation-calculator@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
